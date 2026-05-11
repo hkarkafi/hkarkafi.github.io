@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <header class="top">
+        <div class="container glass-panel top-content">
+        <div class="top-img">
+          <img src="profile.jpeg" class="top-img-profile" alt="image">
+        </div>
+        <div class="top-text">
+          <h1 class="name">Elhassan Ouledelkarkafi</h1>
+          <h2 class="title">2ème année de Licence en Informatique</h2>
+            <div class="social">
+             <a href="linkedin" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="email" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+             <a href="github" class="social-link"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    </header>
+    <section id="about" class="container">
+     <h2 class="section-title">À propos de moi</h2>
+      <div class="glass-panel  p-8">
+        <p class="bio-text ">
+                Actuellement étudiant en 2ème année de Licence Informatique (SMI) à la Faculté des Sciences Semlalia de Marrakech, je me passionne pour le développement de solutions logicielles et l'architecture système. Mon parcours académique m'a permis de solidifier mes bases en C/C++, en programmation bas niveau et en gestion de structures de données complexes. Curieux et autodidacte, j'explore activement l'écosystème web, notamment ReactJS, pour concevoir des interfaces modernes et performantes.
+            </p>
+      </div>
+    </section>
+    <section id="skills" class="container">
+        <h2 class="section-title">Compétences</h2>
+        <div class="skills-grid">
+           <div class="glass-panel p-6">
+            <h3 class="skill-category">Techniques</h3>
+            <div class="skill-item">
+                    <div class="skill-header">
+                        <span>HTML/CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>JavaScript (ES6+)</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>c</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-width="80%"></div>
+                    </div>
+                <div class="skill-item">   
+                    <div class="skill-header">
+                        <span>UML</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>python</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" data-width="85%"></div>
+                    </div>
+                </div>
+                </div>
+           </div>
+            <div class="glass-panel p-6">
+                <h3 class="skill-category">Outils & Soft Skills</h3>
+                <div class="tags-container">
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Méthodes Agiles</span>
+                    <span class="skill-tag">Résolution de problèmes</span>
+                    <span class="skill-tag">Travail en équipe</span>
+                    <span class="skill-tag">Autonomie</span>
+                    <span class="skill-tag">Veille technologique</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="formation" class="container">
+      <h2 class="section-title">Formation</h2>
+      <div class="glass-panel">
+         <div class="formation-grep">
+           <div class="f-item">
+            <button class="f-header">
+                <div class="f-title">
+                    <h4>Licence</h4>
+                    <span class="f-date">2024/2027</span>
+                </div>
+                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="f-content">
+                    <p>Licence d'Informatique
+Faculté des Sciences Semlalia, Marrakech
+Deuxième année en cours.</p>
+           </div>
+           
+           <div class="f-item">
+            <button class="f-header">
+                <div class="f-title">
+                    <h4>Baccalauréat</h4>
+                    <span class="f-date">2023/2024</span>
+                </div>
+                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+            </button>
+            <div class="f-content">
+                    <p>Baccalauréat Sciences Physiques – Lycée prince heritier MY Elhassan Tamansourt, Marrakech (Mention AB).</p>
+           </div>
+           
+           
+
+         </div>
+      </div>
+    </section>
+    <section id="project" class="container">
+        <h2 class="section-title">Projets & Expériences</h2>
+        <div id="react-projects-root"></div>
+    </section>
+    <section id="contact" class="container" >
+     <h2 class="section-title">contact</h2>
+     <div id="react-contact-root"></div>
+    </section>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="script-react.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
