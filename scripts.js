@@ -60,6 +60,11 @@ function animateSkills() {
         if(estValide){
             $('.input').css('border-color', 'var( --accent-primary)');
             $('.input').val('');
+            $('#btn-envoyer').html('<i class="fa-solid fa-check"></i> Envoyé !');
+            setTimeout(() => {
+             $('#btn-envoyer').html('<i class="fa-regular fa-paper-plane"></i>');
+             $('.input').val('');
+             }, 3000);
         }
 
         
