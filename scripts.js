@@ -26,9 +26,10 @@ function animateSkills() {
         } else {
             
             $item.addClass('active');
-            $content.css('max-height', $content.prop('scrollHeight') + 40 + 'px'); // 40px padding compensé
+            $content.css('max-height', $content.prop('scrollHeight') + 40 + 'px'); 
             $content.css('padding-top', '1.2rem');
             $content.css('padding-bottom', '1.2rem');
+            
         }
     });
    $(document).on('click', '#btn-envoyer', function() {
